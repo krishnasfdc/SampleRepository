@@ -7,6 +7,12 @@
             ],
             "c/helloWorld": [
                 "helloWorld/helloWorld.js"
+            ],
+            "c/accountSearch": [
+                "accountSearch/accountSearch.js"
+            ],
+            "c/AccountSearch": [
+                "AccountSearch/AccountSearch.js"
             ]
         },
         "experimentalDecorators": true

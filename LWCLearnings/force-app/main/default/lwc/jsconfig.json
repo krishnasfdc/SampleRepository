@@ -2,11 +2,14 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "c/accountSearch": [
-                "accountSearch/accountSearch.js"
-            ],
             "c/helloWorld": [
                 "helloWorld/helloWorld.js"
+            ],
+            "c/AccountFind": [
+                "AccountFind/AccountFind.js"
+            ],
+            "c/accountFind": [
+                "accountFind/accountFind.js"
             ]
         },
         "experimentalDecorators": true

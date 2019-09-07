@@ -1,19 +1,19 @@
 {
     "compilerOptions": {
+        "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
             "c/accountSearch": [
-                "accountSearch/accountSearch.js"
+                "../../../../../accountSearch/accountSearch.js"
             ],
             "c/helloWorld": [
-                "helloWorld/helloWorld.js"
+                "../../../../../helloWorld/helloWorld.js"
             ]
-        },
-        "experimentalDecorators": true
+        }
     },
     "include": [
         "**/*",
-        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+        "../../../../../../../../../.sfdx/typings/lwc/**/*.d.ts"
     ],
     "typeAcquisition": {
         "include": [

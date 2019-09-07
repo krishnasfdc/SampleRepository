@@ -6,7 +6,7 @@
                 </lightning-input>
                 <template if:true={listIsNotEmpty}>
                     <template for:each={allAccounts.data} for:item="account">
-                        {account.Name}
+                        <c-account-card key={account.Id} account={account}></c-account-card>
                     </template>
                 </template>
             </lightning-layout-item>

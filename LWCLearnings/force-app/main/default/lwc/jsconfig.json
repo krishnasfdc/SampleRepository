@@ -10,6 +10,12 @@
             ],
             "c/accountFind": [
                 "accountFind/accountFind.js"
+            ],
+            "c/AccountCard": [
+                "AccountCard/AccountCard.js"
+            ],
+            "c/accountCard": [
+                "accountCard/accountCard.js"
             ]
         },
         "experimentalDecorators": true

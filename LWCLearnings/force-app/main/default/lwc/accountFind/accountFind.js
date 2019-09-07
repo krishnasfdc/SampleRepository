@@ -1,5 +1,6 @@
 import { LightningElement, api, wire } from 'lwc';
 import findAllAccounts from '@salesforce/apex/LWC_AccountController.findAllAccounts';
+import findAccountByName from '@salesforce/apex/LWC_AccountController.findAccountByName';
 
 export default class AccountFind extends LightningElement {
 
@@ -7,10 +8,9 @@ export default class AccountFind extends LightningElement {
 
     @wire(findAllAccounts) allAccounts;
 
-    get listIsNotEmpty() {
+    @wire(findAccountByName) accts;
 
-        /* eslint-disable no-console */
-        console.log(this.allAccounts.data.length);
+    get listIsNotEmpty() {
 
         return this.allAccounts && Array.isArray(this.allAccounts.data) && this.allAccounts.data.length > 0;
     }
@@ -19,5 +19,7 @@ export default class AccountFind extends LightningElement {
 
         /* eslint-disable no-console */
         console.log(event.target.value);
+
+        
     }
 }

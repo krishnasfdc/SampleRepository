@@ -1,3 +1,10 @@
 <template>
-    
+    <lightning-card title="Find Account" icon-name="standard:account">
+        <lightning-layout>
+            <lightning-layout-item padding="around">
+                <lightning-input label="Account Name" value={accName} onchange={handleChange}>                    
+                </lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
 </template>

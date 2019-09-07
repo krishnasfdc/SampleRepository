@@ -4,6 +4,11 @@
             <lightning-layout-item padding="around">
                 <lightning-input label="Account Name" value={accName} onchange={handleChange}>                    
                 </lightning-input>
+                <template if:true={listIsNotEmpty}>
+                    <template for:each={allAccounts.data} for:item="account">
+                        {account.Name}
+                    </template>
+                </template>
             </lightning-layout-item>
         </lightning-layout>
     </lightning-card>

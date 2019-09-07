@@ -1,10 +1,9 @@
 <template>
-    <lightning-card title="Find Account" icon-name="standard:account">
+    <lightning-card title="Find Account" icon-name="custom:custom9">
         <lightning-layout>
             <lightning-layout-item padding="around">
                 <lightning-input label="Account Name" value={accName} onchange={handleChange}>                    
                 </lightning-input>
-                {listIsNotEmpty}
                 <template if:true={listIsNotEmpty}>
                     <template for:each={allAccounts.data} for:item="account">
                         {account.Name}

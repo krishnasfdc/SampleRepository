@@ -9,6 +9,9 @@ export default class AccountFind extends LightningElement {
 
     get listIsNotEmpty() {
 
+        /* eslint-disable no-console */
+        console.log(this.allAccounts.data.length);
+
         return this.allAccounts && Array.isArray(this.allAccounts.data) && this.allAccounts.data.length > 0;
     }
 

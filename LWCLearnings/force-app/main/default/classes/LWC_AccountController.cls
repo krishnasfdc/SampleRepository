@@ -3,7 +3,7 @@ public with sharing class LWC_AccountController {
 
     }
 
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static List<Account> findAllAccounts(){
         
         return [SELECT Id, Name, Phone, Rating, BillingStreet, BillingCity, BillingState,

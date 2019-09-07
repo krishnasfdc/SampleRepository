@@ -4,6 +4,7 @@
             <lightning-layout-item padding="around">
                 <lightning-input label="Account Name" value={accName} onchange={handleChange}>                    
                 </lightning-input>
+                {listIsNotEmpty}
                 <template if:true={listIsNotEmpty}>
                     <template for:each={allAccounts.data} for:item="account">
                         {account.Name}
